@@ -13,5 +13,12 @@
     "artist": "Jimi Hendrix",
     "description": "Second studio album by the English-American band, released in 1967.",
     "id": "3"
-  }]
+  }],
+
+  "users": [{
+    "uid": "GyZLThgJklhUY1LYg7QwKxZMfcP2",
+    "name": "Rica",
+    "email": "test@test.com",
+    "id": "1"
+    }]
 }

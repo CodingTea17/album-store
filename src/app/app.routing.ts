@@ -6,6 +6,7 @@ import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { AlbumDetailComponent } from './album-detail/album-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { AuthGuardService } from './auth-guard.service';
+import { UserComponent } from './user/user.component'
 
 const appRoutes: Routes = [
   {
@@ -27,6 +28,11 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: 'profile',
+    component: UserComponent,
     canActivate: [AuthGuardService]
   }
  ];
