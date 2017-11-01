@@ -4,7 +4,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { AlbumDetailComponent } from './album-detail/album-detail.component';
-import { AdminComponent }   from './admin/admin.component';
+import { AdminComponent } from './admin/admin.component';
+import { AuthGuardService } from './auth-guard.service';
 
 const appRoutes: Routes = [
   {
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
   },
   {
     path: 'admin',
-    component: AdminComponent
+    component: AdminComponent,
+    canActivate: [AuthGuardService]
   }
  ];
 
