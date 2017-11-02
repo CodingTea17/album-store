@@ -11,8 +11,9 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'Epicodus Tunes';
   user;
-  private isLoggedIn: Boolean;
-  private userName: String;
+  private uid: string;
+  private isLoggedIn: boolean;
+  private userName: string;
 
   constructor(public authService: AuthenticationService, private router: Router) {
     this.authService.user.subscribe(user => {
@@ -21,6 +22,7 @@ export class AppComponent {
      } else {
        this.isLoggedIn = true;
        this.userName = user.displayName;
+       this.uid = user.uid;
      }
    });
   }
@@ -34,7 +36,7 @@ export class AppComponent {
     this.router.navigate(['']);
   }
 
-  goToProfile(clickedPost: any){
+  goToProfile(){
     this.router.navigate(['profile']);
   };
 

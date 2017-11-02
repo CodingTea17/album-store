@@ -14,6 +14,7 @@ export class AdminComponent {
   private user;
 
   constructor(private albumService: AlbumService) { }
+
   submitForm(title: string, artist: string, description: string) {
     let newAlbum: Album = new Album(title, artist, description);
     this.albumService.addAlbum(newAlbum);

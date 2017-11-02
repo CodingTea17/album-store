@@ -15,10 +15,13 @@
     "id": "3"
   }],
 
-  "users": [{
-    "uid": "GyZLThgJklhUY1LYg7QwKxZMfcP2",
-    "name": "Rica",
-    "email": "test@test.com",
-    "id": "1"
-    }]
+  "users": {
+      "GyZLThgJklhUY1LYg7QwKxZMfcP2": {
+        "name": "Rica",
+        "email": "test@test.com"
+      },
+      "A1LypXM7JNhjPQIBhYeXBX7s1i83": {
+        "name": "Dawson"
+      }
+    }
 }

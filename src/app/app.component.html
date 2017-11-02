@@ -8,7 +8,7 @@
       <li><a routerLink="marketplace">Marketplace</a></li>
       <ng-container *ngIf="isLoggedIn">
         <li>
-          <a (click)="goToProfile(user)">{{userName}}'s Account</a>
+          <a (click)="goToProfile()">{{userName}}'s Account</a>
         </li>
         <li>
           <a (click)="logout()">Log out</a>
